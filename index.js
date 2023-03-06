@@ -7,6 +7,7 @@ import SequelizeStore from "connect-session-sequelize";
 import  UserRoute from "./routes/UserRoute.js";
 import  ProductRoute from "./routes/ProductRoute.js";
 import AuthRoute from "./routes/AuthRoute.js";
+import path from "path"
 
 dotenv.config();
 
@@ -37,6 +38,14 @@ app.use(express.json());
 app.use(UserRoute);
 app.use(ProductRoute);
 app.use(AuthRoute);
+app.set('view engine', 'ejs');
+app.use('public', express.static(new URL('./public', import.meta.url).pathname));
+app.use(express.static('public', { extensions: ['html', 'css','js'],  }));
+
+app.get('/', function(req, res) {
+    res.render('pages/index', { title: 'Mi aplicación Node.js' });
+});
+
 //store.sync();
 app.listen(process.env.APP_PORT,()=>{
     console.log('prendio esta monda')
