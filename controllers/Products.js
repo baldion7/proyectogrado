@@ -36,7 +36,7 @@ export const getProductsByid =async(req,res)=>{
                 uuid: req.params.id
             }
         });
-        if(!product) return res.status(404).json({msg: "Data tidak ditemukan"});
+        if(!product) return res.status(404).json({msg: "Datos no encontrados"});
         let response;
         if(req.role === "admin"){
             response = await Product.findOne({
@@ -74,7 +74,7 @@ export const createProducts =async(req,res)=>{
             price: price,
             userId: req.userId
         });
-        res.status(201).json({msg: "Product Created Successfuly"});
+        res.status(201).json({msg: "Producto creado con éxito"});
     } catch (error) {
         res.status(500).json({msg: error.message});
     }
@@ -86,7 +86,7 @@ export const updateProducts =async(req,res)=>{
                 uuid: req.params.id
             }
         });
-        if(!product) return res.status(404).json({msg: "Data tidak ditemukan"});
+        if(!product) return res.status(404).json({msg: "Datos no encontrados"});
         const {name, price} = req.body;
         if(req.role === "admin"){
             await Product.update({name, price},{
@@ -95,14 +95,14 @@ export const updateProducts =async(req,res)=>{
                 }
             });
         }else{
-            if(req.userId !== product.userId) return res.status(403).json({msg: "Akses terlarang"});
+            if(req.userId !== product.userId) return res.status(403).json({msg: "acceso prohibido"});
             await Product.update({name, price},{
                 where:{
                     [Op.and]:[{id: product.id}, {userId: req.userId}]
                 }
             });
         }
-        res.status(200).json({msg: "Product updated successfuly"});
+        res.status(200).json({msg: "Producto actualizado con éxito"});
     } catch (error) {
         res.status(500).json({msg: error.message});
     }
@@ -114,7 +114,7 @@ export const deleteProducts =async(req,res)=>{
                 uuid: req.params.id
             }
         });
-        if(!product) return res.status(404).json({msg: "Data tidak ditemukan"});
+        if(!product) return res.status(404).json({msg: "Datos no encontrados"});
         const {name, price} = req.body;
         if(req.role === "admin"){
             await Product.destroy({
@@ -123,14 +123,14 @@ export const deleteProducts =async(req,res)=>{
                 }
             });
         }else{
-            if(req.userId !== product.userId) return res.status(403).json({msg: "Akses terlarang"});
+            if(req.userId !== product.userId) return res.status(403).json({msg: "acceso prohibido"});
             await Product.destroy({
                 where:{
                     [Op.and]:[{id: product.id}, {userId: req.userId}]
                 }
             });
         }
-        res.status(200).json({msg: "Product deleted successfuly"});
+        res.status(200).json({msg: "Producto eliminado con éxito"});
     } catch (error) {
         res.status(500).json({msg: error.message});
     }
