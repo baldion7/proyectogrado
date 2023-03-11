@@ -49,5 +49,9 @@ const Users=db.define('users',{
     },
 },{
     freezeTableName:true
-})
+});
+Users.beforeCreate(async ( Users, options) => {
+    const hashedPassword = await argon2.hash( Users.password);
+    Users.password = hashedPassword;
+});
 export default Users;

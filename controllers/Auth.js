@@ -1,7 +1,5 @@
 import  User from "../models/UserModel.js";
 import argon2 from "argon2";
-
-
 export const Login = async (req, res) => {
     if (!req.body.email || !req.body.password) {
         return res.status(400).json({ msg: "Ingrese un correo electrónico y una contraseña" });
@@ -25,11 +23,11 @@ export const Login = async (req, res) => {
     const rol = user.role;
 
     if (rol === "admin") {
-        res.redirect("/admin");
+       return  res.redirect("/admin");
     } else if (rol === "user") {
-        res.redirect("/usuario");
+        res.redirect("/user");
     } else {
-        res.redirect("/login");
+      return   res.redirect("/login");
     }
 };
 
@@ -52,10 +50,3 @@ export const logOut = (req, res)=>{
         res.status(200).json({msg:"has cerrado la sesión"});
     })
 }
-export const AdminView=(req,res)=>{
-    res.render('pages/admin-page', { title: 'Mi aplicación Node.js' });
-}
-export const UserView=(req,res)=>{
-    res.render('pages/user', { title: 'Mi aplicación Node.js' });
-}
-

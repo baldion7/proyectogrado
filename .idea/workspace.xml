@@ -4,27 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02a97dba-4ce2-42b4-8f44-2f181dae342a" name="Changes" comment="Intalacion del motor de plantillas ejs creacion de carpeta public y darle estilos">
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/error.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/login.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/register.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/user.ejs" afterDir="false" />
+    <list default="true" id="02a97dba-4ce2-42b4-8f44-2f181dae342a" name="Changes" comment="Validacion de roles para las rutas y vista y funcional el login">
+      <change afterPath="$PROJECT_DIR$/controllers/Services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/Views.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/header.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/ServicesRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/ViewsRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/forgot-password.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/pages/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/reset-password.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middleware/AuthUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/AuthUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/UserModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/UserModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/AuthRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/AuthRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/admin-page.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/ProductRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ProductRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/UserRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/UserRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/admin-page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/admin-page.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/register.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/register.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +93,9 @@
       <recent name="D:\proyect_mante\views\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\proyect_mante\public\img" />
       <recent name="D:\proyect_mante\public" />
+      <recent name="D:\proyect_mante\public\css" />
       <recent name="D:\proyect_mante\views\pages" />
     </key>
   </component>
@@ -105,7 +114,17 @@
       <workItem from="1678056279749" duration="10323000" />
       <workItem from="1678115240240" duration="10456000" />
       <workItem from="1678196419512" duration="4722000" />
-      <workItem from="1678203642427" duration="10577000" />
+      <workItem from="1678203642427" duration="11289000" />
+      <workItem from="1678239893225" duration="2835000" />
+      <workItem from="1678286688113" duration="4122000" />
+      <workItem from="1678311318504" duration="1442000" />
+      <workItem from="1678363418383" duration="111000" />
+      <workItem from="1678391611784" duration="4508000" />
+      <workItem from="1678458326180" duration="6575000" />
+      <workItem from="1678472675432" duration="1712000" />
+      <workItem from="1678488430732" duration="1403000" />
+      <workItem from="1678502512820" duration="169000" />
+      <workItem from="1678548426731" duration="13353000" />
     </task>
     <task id="LOCAL-00001" summary="CREACION DE BASE DE DATOS CON CODIGO CREACION DE BASE DE DATOS Y CARPETAS PARA EL PROYECTO">
       <created>1678056952533</created>
@@ -135,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678141855090</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Validacion de roles para las rutas y vista y funcional el login">
+      <created>1678220320909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678220320909</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +184,8 @@
     <MESSAGE value="Terminacion de las rutas del login y las demas rutas y tambien auth" />
     <MESSAGE value="Terminacion de las rutas del login y las demas rutas y tambien auth por compleot solo falta probar con front" />
     <MESSAGE value="Intalacion del motor de plantillas ejs creacion de carpeta public y darle estilos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intalacion del motor de plantillas ejs creacion de carpeta public y darle estilos" />
+    <MESSAGE value="validacion de roles para las rutas y vista y funcional el login" />
+    <MESSAGE value="Validacion de roles para las rutas y vista y funcional el login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validacion de roles para las rutas y vista y funcional el login" />
   </component>
 </project>

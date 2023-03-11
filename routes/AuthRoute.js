@@ -1,10 +1,7 @@
 import express from "express";
-import {Login,logOut,Me,AdminView,UserView} from "../controllers/Auth.js"
-import {veryfyUser, adminOnly} from "../middleware/AuthUser.js";
+import {Login,logOut,Me} from "../controllers/Auth.js"
 const router = express.Router();
-router.get('/me',Me);
-router.post('/login',Login);
-router.delete('/logout',logOut);
-router.get('/admin',veryfyUser,adminOnly,AdminView);
-router.get('/usuario',veryfyUser,UserView)
+router.get('/api/me',Me);
+router.post('/api/login',Login);
+router.delete('/api/logout',logOut);
 export default router;

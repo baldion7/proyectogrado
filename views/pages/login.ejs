@@ -2,14 +2,46 @@
 <html>
 <head>
     <title><%= title %></title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-<form action="/login" method="post">
-    <input type="email" id="email" name="email" required>
-    <input type="password" id="password" name="password" required>
-    <button type="submit">Iniciar sesión</button>
-</form>
+<div id="content">
+    <h1 id="content_h1">
 
+    </h1>
+
+    <div id="mensaje">
+        <p style="text-align:justify">
+            Estimado usuario para poder acceder a la plataforma de mantenimientos de equipos debe hacer uso del formulario
+        </p>
+        <p style="text-align:justify; font-weight:bold">
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+    </div>
+    <br>
+    <form action="/api/login" method="post">
+    <div id="cajalogueo1">
+
+        <p>
+            Usuario
+            <input type="text" name="email" id="email" size="15" value>
+        </p>
+    </div>
+    <div id="cajalogueo2">
+        <p>
+            Contraseña
+            <input type="password" name="password" id="password" size="15" value>
+        </p>
+    </div>
+    <div id="botones">
+        <input id="btn-recordar" type="button" value="Recordar contraseña" class="otros">
+        <input id="btn-restablecer" type="button" value="Restablecer" class="otros">
+        <button id="btn-login" type="submit" >Ingresar</button>
+    </div>
+    </form>
+</div>
 </body>
 </html>
