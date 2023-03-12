@@ -8,7 +8,7 @@ import  UserRoute from "./routes/UserRoute.js";
 import  ProductRoute from "./routes/ProductRoute.js";
 import ViewsRoute from "./routes/ViewsRoute.js";
 import AuthRoute from "./routes/AuthRoute.js";
-import bodyParser from 'body-parser';
+import bodyParser from "body-parser";
 import ServicesRoute from "./routes/ServicesRoute.js";
 
 

@@ -4,34 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02a97dba-4ce2-42b4-8f44-2f181dae342a" name="Changes" comment="Validacion de roles para las rutas y vista y funcional el login">
-      <change afterPath="$PROJECT_DIR$/controllers/Services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/Views.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/header.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/ServicesRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/ViewsRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/forgot-password.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/reset-password.ejs" afterDir="false" />
+    <list default="true" id="02a97dba-4ce2-42b4-8f44-2f181dae342a" name="Changes" comment="cambio de contraseña con token al correo y redirecciones de url mas profesional corrección de url que no existan la envía a la vista que tiene permiso el usuario y con la vista del login mas formal">
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/AuthUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/AuthUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/UserModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/UserModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/query-generator.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/utils/sql.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/buffer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/buffer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/buffer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/buffer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-flag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/has-flag/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lru-cache/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lru-cache/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lru-cache/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lru-cache/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minipass/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minipass/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minipass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minipass/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_duplex.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_duplex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_passthrough.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_passthrough.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_transform.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_transform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_writable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_writable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/async_iterator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/async_iterator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/buffer_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/buffer_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/destroy.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/destroy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/end-of-stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/end-of-stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/from.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/from.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/lib/internal/streams/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/semver/node_modules/lru-cache/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/semver/node_modules/lru-cache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/semver/node_modules/lru-cache/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/semver/node_modules/lru-cache/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/supports-color/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/supports-color/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/supports-color/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/supports-color/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/supports-color/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/supports-color/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/AuthRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/AuthRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/ProductRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ProductRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/UserRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/UserRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/admin-page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/admin-page.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/register.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/register.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +57,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;baldion7&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;author&quot;: &quot;baldion7&quot;
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="8fa7c5f3-64d6-477f-8ec4-9654af0e29f8" />
-        <option name="url" value="https://github.com/baldion7/mantenimiento.git" />
+        <option name="url" value="https://github.com/baldion7/proyectogrado.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -76,7 +96,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.14.2&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.14.2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/proyect_mante/views/pages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/proyect_mante&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -90,14 +110,33 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\proyect_mante" />
       <recent name="D:\proyect_mante\views\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\proyect_mante" />
       <recent name="D:\proyect_mante\public\img" />
       <recent name="D:\proyect_mante\public" />
       <recent name="D:\proyect_mante\public\css" />
       <recent name="D:\proyect_mante\views\pages" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -125,6 +164,7 @@
       <workItem from="1678488430732" duration="1403000" />
       <workItem from="1678502512820" duration="169000" />
       <workItem from="1678548426731" duration="13353000" />
+      <workItem from="1678650112735" duration="837000" />
     </task>
     <task id="LOCAL-00001" summary="CREACION DE BASE DE DATOS CON CODIGO CREACION DE BASE DE DATOS Y CARPETAS PARA EL PROYECTO">
       <created>1678056952533</created>
@@ -161,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678220320909</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cambio de contraseña con token al correo y redirecciones de url mas profesional corrección de url que no existan la envía a la vista que tiene permiso el usuario y con la vista del login mas formal">
+      <created>1678643269925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678643269925</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +233,7 @@
     <MESSAGE value="Intalacion del motor de plantillas ejs creacion de carpeta public y darle estilos" />
     <MESSAGE value="validacion de roles para las rutas y vista y funcional el login" />
     <MESSAGE value="Validacion de roles para las rutas y vista y funcional el login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validacion de roles para las rutas y vista y funcional el login" />
+    <MESSAGE value="cambio de contraseña con token al correo y redirecciones de url mas profesional corrección de url que no existan la envía a la vista que tiene permiso el usuario y con la vista del login mas formal" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambio de contraseña con token al correo y redirecciones de url mas profesional corrección de url que no existan la envía a la vista que tiene permiso el usuario y con la vista del login mas formal" />
   </component>
 </project>
